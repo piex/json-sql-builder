@@ -334,7 +334,7 @@ SELECT
 | **逻辑** | `$and`, `$or`, `$not` | `{ "$or": [ { "a": 1 }, { "b": 2 } ] }` |
 | **比较** | `$eq`, `$neq`, `$gt`, `$gte`, `$lt`, `$lte` | `{ "age": { "$gt": 18 } }` |
 | **集合** | `$in`, `$nin`, `$between` | `{ "id": { "$in": [1, 2, 3] } }` |
-| **模糊匹配** | `$like`, `$ilike` (不区分大小写) | `{ "name": { "$like": "%john%" } }` |
+| **模糊匹配** | `$like`, `$ilike` | `{ "name": { "$like": "%john%" } }` |
 | **JSON** | `$json_path`, `$json_contains` | `{ "$json_contains": { "field": "data", "path": "$.tags", "value": "VIP" } }` |
 | **空值检查** | `$is_null,` `$is_not_null` | `{ "email": { "$is_null": true } }` |
 | **聚合** | `$count`, `$sum`, `$avg` | `{ "$avg": "price" }` |

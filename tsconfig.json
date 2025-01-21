@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"]
+    "lib": ["ESNext"],
+    "target": "ESNext"
   }
 }

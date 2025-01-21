@@ -1,3 +1,5 @@
+export type Dialect = 'mariadb' | 'mysql' | 'postgres';
+
 export type AggregationOperator = 
   | "$count"
   | "$sum"
@@ -7,7 +9,7 @@ export type AggregationOperator =
   | "$group_concat";
 
 export interface Query {
-  // dialect?: Dialect;
+  dialect?: Dialect;
   type?: 'select' | 'insert' | 'update' | 'delete';
   options?: {
     distinct?: boolean;
